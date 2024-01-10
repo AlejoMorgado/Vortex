@@ -1,5 +1,6 @@
 import React from "react";
 import "./homePage.css";
+import imageSrc from "../assets/homeImage.svg"; // Replace "image.jpg" with the actual file name
 
 const HomePage = () => {
   return (
@@ -15,13 +16,28 @@ const HomePage = () => {
           </button>
         </div>
       </header>
-      <section class="bg-gray-50 dark:bg-gray-900">
+      <section>
         <div>
-          ResearchCraft es una plataforma innovadora que conecta a estudiantes
-          investigadores novatos con escritores expertos, ofreciendo un espacio
-          donde la excelencia académica y la colaboración se encuentran.
-          Facilitamos la publicación de investigaciones al proporcionar apoyo
-          crítico en revisión, calificación y mejora de documentos técnicos.
+          <h1 className="slogan">
+            Donde las ideas se convierten en papers de calidad
+          </h1>
+        </div>
+        <hr className="custom-hr"></hr>
+        <div className="contentContainer">
+          <p>
+            ResearchCraft es una plataforma innovadora que conecta a estudiantes
+            investigadores novatos con escritores expertos, ofreciendo un
+            espacio donde la excelencia académica y la colaboración se
+            encuentran. Facilitamos la publicación de investigaciones al
+            proporcionar apoyo crítico en revisión, calificación y mejora de
+            documentos técnicos.
+          </p>
+
+          <img
+            className="homeImage"
+            src={imageSrc}
+            alt="Description of the image"
+          />
         </div>
       </section>
       <footer>
