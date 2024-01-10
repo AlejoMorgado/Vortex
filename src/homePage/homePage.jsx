@@ -24,7 +24,7 @@ const HomePage = () => {
         </div>
         <hr className="custom-hr"></hr>
         <div className="contentContainer">
-          <p>
+          <p className="contentText">
             ResearchCraft es una plataforma innovadora que conecta a estudiantes
             investigadores novatos con escritores expertos, ofreciendo un
             espacio donde la excelencia académica y la colaboración se

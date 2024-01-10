@@ -30,17 +30,33 @@ hr {
   justify-content: space-between;
   font-size: 24px;
 }
+/* Original styles for larger screens */
 .contentContainer {
   margin-top: 2em;
   font-size: 24px;
   font-weight: lighter;
-  width: 50%;
   display: flex;
-  justify-self: center;
+  justify-content: space-between;
   color: #d45e54;
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .contentContainer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center; /* Center-align text on smaller screens */
+    margin-top: 1em;
+    font-size: 18px;
+  }
+}
+
 .homeImage {
   width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .homeImage {
+    width: 100%; /* Set width to 100% for smaller screens */
+  }
 }
 .slogan {
   color: #d45e54;
@@ -50,4 +66,15 @@ hr {
 .custom-hr {
   color: #d45e54;
   border-top: 1em solid #d45e54;
+}
+/* Original styles for larger screens */
+.contentText {
+  width: 43%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .contentText {
+    width: 100%; /* Set width to 100% for smaller screens */
+  }
 }
