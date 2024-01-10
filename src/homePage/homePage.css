@@ -1,0 +1,19 @@
+body {
+  background-color: #fff7ed;
+}
+header {
+  display: flex;
+  justify-content: center;
+  color: #c36b6b;
+}
+.home-page {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.headerContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
