@@ -18,7 +18,7 @@ const Login = () => {
     if (userType === "student") {
       history.push("/StudentComponent/");
     } else if (userType === "professional") {
-      history.push("/ProfessionalComponent/");
+      history.push("/StudentComponent/");
     }
   };
 
